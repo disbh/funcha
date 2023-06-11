@@ -5,7 +5,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = 
     `
-    <nav class="justify-center bg-[#d77746] content-center text-center w-full  text-white mb-4 p-4 px-16">
+    <nav class="justify-center bg-[#d77746] content-center text-center w-full  text-white mb-4 p-2 px-16 rounded-b-full">
         <div class="overflow-hidden bg-[rgb(150,84,31)] shadow-2xl rounded-lg">
           <a href="/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mr-2 hover:bg-white transition-all">funCha</a>
           <a href="/about/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">About</a>
@@ -16,7 +16,7 @@ class Navbar extends HTMLElement {
             <button class="text-base text-white bg-inherit m-0 px-4 py-3.5 border-[none] outline-0 hover:text-black  hover:bg-white transition-all">Food 
               <i class="fa fa-caret-down"></i>
             </button>
-            <div class="hidden group-hover:block absolute bg-[#f9f9f9] min-w-[160px] shadow-2xl z-[1]">
+            <div class="invisible group-hover:visible delay-75 translate-y-6 group-hover:translate-y-0 transition-all absolute bg-[#f9f9f9] min-w-[160px] shadow-2xl z-[1]">
               <a href="/food/" class="float-none text-[black] no-underline block text-left px-4 py-3 hover:bg-[#ddd]">Food and History</a>
               <a href="/recipes/modern/" class="float-none text-[black] no-underline block text-left px-4 py-3 hover:bg-[#ddd]">Modern Recipes</a>
               <a href="/recipes/classical/" class="float-none text-[black] no-underline block text-left px-4 py-3 hover:bg-[#ddd]">Classical Recipes</a>

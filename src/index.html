@@ -11,6 +11,9 @@
   </head>
 
   <body class="no-scrollbar">
+    <div class="w-screen h-screen top-0 left-0 absolute grid items-center justify-center transition-all ease-[cubic-bezier(0.64,_0,_0.78,_0)] duration-500 bg-black" id="preloader">
+      <div class="preloader"></div>
+    </div>  
     <main>
       <!-- Top Brown Section -->
       <navbar-component></navbar-component>
@@ -54,14 +57,14 @@
       <div class="w-screen h-full bg-slate-100 pt-6 ">
         <h1 class="text-8xl text-center font-bold underline">Recipes</h1>
         <div class="grid grid-cols-3 gap-2 p-12  px-96">
-          <img class="bg-gray-200 col-span-3 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
-          <img class="bg-gray-500 col-span-2 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
-          <img class="bg-gray-500 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
-          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
-          <img class="bg-gray-500 col-span-2 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
-          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
-          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
-          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
+          <img class="bg-gray-200 col-span-3 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
+          <img class="bg-gray-500 col-span-2 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
+          <img class="bg-gray-500 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
+          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
+          <img class="bg-gray-500 col-span-2 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg" alt="image1">
+          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
+          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
+          <img class="bg-gray-400 col-span-1 row-span-1 w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg" alt="image1">
         </div>
       </div>
       
@@ -69,6 +72,7 @@
     <footer-component></footer-component>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./components.js"></script>
+    <script type="module" src="./loader.js"></script>
   </body>
 </html>
 
