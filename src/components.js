@@ -6,12 +6,12 @@ class Navbar extends HTMLElement {
     this.innerHTML = 
     `
     <nav class="justify-center bg-[#d77746] content-center text-center w-full  text-white mb-4 p-4 px-16">
-        <div class="overflow-hidden bg-[rgb(150,84,31)] shadow-2xl">
+        <div class="overflow-hidden bg-[rgb(150,84,31)] shadow-2xl rounded-lg">
           <a href="/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mr-2 hover:bg-white transition-all">funCha</a>
           <a href="/about/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">About</a>
           <a href="/music/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">Music</a>
           <a href="/events/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">Events</a>
-          <a href="/credits/" class="float-right text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">Credits</a>
+          <a href="/credits/" class="float-right text-base text-white text-center no-underline px-4 py-3.5 hover:text-black ml-2 hover:bg-white transition-all">Credits</a>
           <div class="float-left group overflow-hidden hover:text-black mx-2 bg:bg-white transition-all">
             <button class="text-base text-white bg-inherit m-0 px-4 py-3.5 border-[none] outline-0 hover:text-black  hover:bg-white transition-all">Food 
               <i class="fa fa-caret-down"></i>
@@ -83,7 +83,7 @@ class Footer extends HTMLElement {
             </div>
         </div>
     </div>
-    <div class="pt-4 mt-4 pt-6 text-gray-600 border-t border-gray-800 text-center"> © 2019 WeTeach. All rights reserved.</div>
+    <div class="mt-4 pt-6 text-gray-600 border-t border-gray-800 text-center"> © 2023 Funcha. All rights reserved.</div>
 </footer>
     `;
   }
