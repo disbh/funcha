@@ -31,6 +31,63 @@ class Navbar extends HTMLElement {
 
 customElements.define('navbar-component', Navbar);
 
+
+class Preloader extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <div class="w-screen h-screen top-0 left-0 absolute grid items-center justify-center transition-all ease-[cubic-bezier(0.64,_0,_0.78,_0)] duration-500 bg-black" id="preloader">
+        <div class="preloader w-[50px] h-[50px] relative mt-[30px] mb-10 mx-auto before:h-[5px] before:opacity-10 before:animate-[shadow_0.5s_linear_infinite] before:rounded-[50%] before:top-[59px] after:h-[50px] after:animate-[loading_0.5s_linear_infinite] after:rounded-[3px] after:top-0; after:content-[''] after:w-[50px] after:absolute after:left-0 before:content-[''] before:w-[50px] before:absolute before:left-0 before:bg-[#000] after:bg-[#d23434]"></div>
+      </div>
+      <style>
+        @keyframes loading{
+          17%{
+            border-bottom-right-radius:3px;
+          }
+          25%{
+            transform:translateY(9px) rotate(22.5deg);
+          }
+          50%{
+            transform:translateY(18px) scale(1,.9) rotate(45deg);border-bottom-right-radius:40px;
+          }
+          75%{
+            transform:translateY(9px) rotate(67.5deg);
+          }
+          100%{
+            transform:translateY(0) rotate(90deg);
+          }
+        }
+
+        @keyframes shadow{
+          0%,100%{
+            transform:scale(1,1);
+          }
+          50%{
+            transform:scale(1.2,1);
+          }
+        }
+      </style>
+    `;
+
+    this.fadeEffect();
+  }
+
+  fadeEffect() {
+    const preloader = this.querySelector('#preloader');
+
+    const fadeOut = () => {
+      preloader.style.opacity = 0;
+      setTimeout(() => {
+        this.style.display = 'none';
+      }, 500);
+    };
+
+    window.addEventListener('load', fadeOut);
+  }
+}
+
+customElements.define('pre-loader', Preloader);
+
+
 class Footer extends HTMLElement {
   constructor() {
     super()
