@@ -5,7 +5,7 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = 
     `
-    <nav class="justify-center bg-[#d77746] content-center text-center w-full  text-white mb-4 p-2 px-16 rounded-b-full">
+    <nav class="justify-center bg-[#d77746] content-center text-center w-[95%]  text-white mb-4 p-2 mx-auto  rounded-b-lg">
         <div class="overflow-hidden bg-[rgb(150,84,31)] shadow-2xl rounded-lg">
           <a href="/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mr-2 hover:bg-white transition-all">funCha</a>
           <a href="/about/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">About</a>
