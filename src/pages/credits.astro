@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+import Preloader from '../components/Preloader.astro';
+import Card from '../components/Card.astro';
+import GridImage from '../components/GridImage.astro';
+---
+
+<Layout title="Funcha">
+	<Preloader></Preloader>
+	<Navbar></Navbar>
+	<div class="flex m-4 px-20 py-8">
+		<Card title="The Bengal Region: West Bengal and Bangladesh" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in tristique nunc. Morbi laoreet, nunc vitae vestibulum auctor, massa mauris rutrum magna, ut ornare tortor lorem a libero. Vestibulum sed est sed justo blandit accumsan ac quis ex. Cras non cursus leo, fermentum tempor nisi. Fusce ante lorem, tempus vel eros id, pellentesque placerat mauris. Curabitur nulla nulla, tincidunt pellentesque est in, vulputate convallis elit. Phasellus quis enim est. Sed venenatis massa semper leo semper molestie. Nam eget facilisis lacus, vitae sollicitudin arcu. Sed sagittis purus sed tellus dictum pretium. Donec luctus vehicula tortor quis faucibus."></Card>
+		<Card title="Food, Music, Religion, and an Unexpected Love Story" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in tristique nunc. Morbi laoreet, nunc vitae vestibulum auctor, massa mauris rutrum magna, ut ornare tortor lorem a libero. Vestibulum sed est sed justo blandit accumsan ac quis ex. Cras non cursus leo, fermentum tempor nisi. Fusce ante lorem, tempus vel eros id, pellentesque placerat mauris. Curabitur nulla nulla, tincidunt pellentesque est in, vulputate convallis elit. Phasellus quis enim est. Sed venenatis massa semper leo semper molestie. Nam eget facilisis lacus, vitae sollicitudin arcu. Sed sagittis purus sed tellus dictum pretium. Donec luctus vehicula tortor quis faucibus."></Card>
+	</div>
+
+	<Footer></Footer>
+</Layout>

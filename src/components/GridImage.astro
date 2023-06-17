@@ -1,0 +1,15 @@
+---
+export interface Props {
+  caption: string;
+  url: string;
+  columns: string;
+}
+const { caption, url, columns } = Astro.props;
+---
+
+<div class:list={["image-container group bg-gray-200 w-full h-full rounded-lg overflow-hidden relative row-span-1",  columns]}>
+  <img class=" image transform transition-transform duration-300 group-hover:scale-[1.15] w-full h-full bg-contain max-h-80 rounded-lg" loading="lazy" src={ url } alt="image1">
+  <div class="overlay absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-all duration-500 group-hover:opacity-100"></div>
+  <div class="caption text-lg text-white absolute bottom-0 left-1/2 my-2  transition-all opacity-0 translate-y-12 group-hover:translate-y-0 duration-500 group-hover:opacity-100 transform -translate-x-1/2">{ caption }</div>
+  <div class="caption text-lg text-white absolute bottom-0 right-0 m-2  mx-8  transition-all opacity-0 translate-y-12 group-hover:translate-y-0 duration-500 group-hover:opacity-100">Recipe &gt;&gt;</div>
+</div>
