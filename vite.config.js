@@ -1,16 +1,16 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
-const rewriteSlashToIndexHtml = () => {
+const rewriteSlashToIndexastro = () => {
   return {
-    name: 'rewrite-slash-to-index-html',
+    name: 'rewrite-slash-to-index-astro',
     apply: 'serve',
     enforce: 'post',
     configureServer(server) {
-      // rewrite / as index.html
+      // rewrite / as index.astro
       server.middlewares.use('/', (req, _, next) => {
         if (req.url === '/') {
-          req.url = '/index.html';
+          req.url = '/index.astro';
         }
         next();
       });
@@ -25,14 +25,14 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
-        about: resolve(__dirname, 'src/about/index.html'),
-        events: resolve(__dirname, 'src/events/index.html'),
-        music: resolve(__dirname, 'src/music/index.html'),
-        credits: resolve(__dirname, 'src/credits/index.html'),
-        religion: resolve(__dirname, 'src/religion/index.html'),
-        recipes_classical: resolve(__dirname, 'src/recipes/classical/index.html'),
-        recipes_modern: resolve(__dirname, 'src/recipes/modern/index.html'),
+        main: resolve(__dirname, 'src/index.astro'),
+        about: resolve(__dirname, 'src/about/index.astro'),
+        events: resolve(__dirname, 'src/events/index.astro'),
+        music: resolve(__dirname, 'src/music/index.astro'),
+        credits: resolve(__dirname, 'src/credits/index.astro'),
+        religion: resolve(__dirname, 'src/religion/index.astro'),
+        recipes_classical: resolve(__dirname, 'src/recipes/classical/index.astro'),
+        recipes_modern: resolve(__dirname, 'src/recipes/modern/index.astro'),
       },
       output: {
         assetFileNames: (assetInfo) => {
@@ -43,6 +43,6 @@ export default defineConfig({
   },
   appType: 'mpa', // disable history fallback
   plugins: [
-    rewriteSlashToIndexHtml(),
+    rewriteSlashToIndexastro(),
   ],
 });
