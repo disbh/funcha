@@ -7,13 +7,13 @@ import GridImage from '../components/GridImage.astro';
 
 <Layout title="Funcha">
 
-	<div class="flex m-4 px-20 py-8">
+	<div class="flex flex-col md:flex-row m-4 gap-5 px-0 md:px-20 py-8">
 		<Card title="The Bengal Region: West Bengal and Bangladesh" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in tristique nunc. Morbi laoreet, nunc vitae vestibulum auctor, massa mauris rutrum magna, ut ornare tortor lorem a libero. Vestibulum sed est sed justo blandit accumsan ac quis ex. Cras non cursus leo, fermentum tempor nisi. Fusce ante lorem, tempus vel eros id, pellentesque placerat mauris. Curabitur nulla nulla, tincidunt pellentesque est in, vulputate convallis elit. Phasellus quis enim est. Sed venenatis massa semper leo semper molestie. Nam eget facilisis lacus, vitae sollicitudin arcu. Sed sagittis purus sed tellus dictum pretium. Donec luctus vehicula tortor quis faucibus."></Card>
 		<Card title="Food, Music, Religion, and an Unexpected Love Story" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in tristique nunc. Morbi laoreet, nunc vitae vestibulum auctor, massa mauris rutrum magna, ut ornare tortor lorem a libero. Vestibulum sed est sed justo blandit accumsan ac quis ex. Cras non cursus leo, fermentum tempor nisi. Fusce ante lorem, tempus vel eros id, pellentesque placerat mauris. Curabitur nulla nulla, tincidunt pellentesque est in, vulputate convallis elit. Phasellus quis enim est. Sed venenatis massa semper leo semper molestie. Nam eget facilisis lacus, vitae sollicitudin arcu. Sed sagittis purus sed tellus dictum pretium. Donec luctus vehicula tortor quis faucibus."></Card>
 	</div>
 	<div class="w-screen h-full bg-slate-100 pt-6 ">
 		<h1 class="text-8xl text-center font-bold underline">Recipes</h1>
-		<div class="grid grid-cols-3 gap-2 p-12 px-[10vw] xl:px-96">
+		<div class="grid grid-cols-3 gap-2 p-12 px-[10vw] container mx-auto">
 			<GridImage 
 				caption="Whoa food!"
 				url="https://images.wallpaperscraft.com/image/single/pizza_food_glass_73012_2560x1024.jpg"
@@ -39,7 +39,7 @@ import GridImage from '../components/GridImage.astro';
 				caption="Whoa food!"
 				url="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg"
 				columns='col-span-1'
-			></GridImage>c 
+			></GridImage>
 			<GridImage 
 				caption="Whoa food!"
 				url="https://www.holidify.com/images/cmsuploads/compressed/Ilish_macher_paturi_20170829115529.jpg"
