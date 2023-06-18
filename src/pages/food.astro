@@ -1,10 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 
-import Card from '../components/Card.astro';
-import GridImage from '../components/GridImage.astro';
+const recipes = await getCollection('recipes', (recipe) => {
+	// console.log(recipe.data.title)
+	// console.log(recipe.data.tags)
+	// console.log(recipe.data.allergens)
+	// console.log(recipe.data.introduction)
+	return recipe.data.draft === false;
+});
+
+import RecipeCard from '../components/RecipeCard.astro'; 
 ---
 
 <Layout title="Funcha">
-	<h1 class="text-8xl text-center font-bold underline">Recipes</h1>
+	<h1 class="text-6xl text-left container mx-auto px-[5vw] font-bold">Recipes</h1>
+
+	<div class="flex flex-col my-12 mt-8 container mx-auto px-[5vw] gap-6">
+		{
+			recipes.map((recipe) => 
+				<RecipeCard
+					title={ recipe.data.title }
+					description={ recipe.data.introduction }
+					url={ recipe.data.image_urls[0] }
+					tags={ recipe.data.tags }
+					allergens={ recipe.data.allergens }
+					slug={ recipe.slug }
+				></RecipeCard>
+			)
+		}
+	</div>
 </Layout>

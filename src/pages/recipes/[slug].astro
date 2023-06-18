@@ -1,0 +1,61 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Layout from '../../layouts/Layout.astro'
+
+export async function getStaticPaths() {
+    const recipes = await getCollection('recipes');
+    console.log(recipes)
+    
+    const returnable =  recipes.map(recipe => {
+        return {
+            params: {
+                slug: recipe.slug,
+            },
+            props: {
+                recipe,
+            },
+        };
+    });
+    return returnable;
+    
+}
+
+interface Props {
+    recipe: CollectionEntry<'recipes'>;
+}
+
+const { recipe }  = Astro.props;
+const { Content } = await recipe.render()
+---
+<Layout title=`How to Make ${ recipe.data.title }`>
+    <h1 class="text-6xl font-bold text-center my-4">{ recipe.data.title }</h1>
+    <div class="grid grid-cols-4">
+        <div class="col-span-1">
+            <h3 class="text-3xl font-bold text-center">Tags</h3>
+                <div class="flex justify-center flex-row flex-wrap gap-3 my-4">
+                    {
+                    recipe.data.tags.map((tag) => <span class="hover:brightness-[0.75] transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#eab89f]/75 text-orange-950 rounded-full px-3">{ tag }</span>)
+                    }
+                </div>
+                <hr class="my-6 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+            <h3 class="text-3xl font-bold text-center">Allergens</h3>
+                <div class="flex justify-center flex-row flex-wrap gap-3 my-4">
+                    {
+                        recipe.data.allergens.map((allergen) => <span class="hover:brightness-[0.5] transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#9b4a22]/50 text-orange-950 rounded-full px-3">{ allergen }</span>)
+                    }
+                </div>
+                <hr class="my-6 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+            <h3 class="text-3xl font-bold text-center">Ingredients</h3>
+                <div class="flex justify-center flex-row flex-wrap  mx-14 gap-3 my-4">
+                    {
+                        recipe.data.ingredients.map((ingredient) => <span class="hover:brightness-[0.75] transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#eab89f]/75 text-orange-950 rounded-full px-3">{ ingredient }</span>)
+                    }
+                </div>
+        </div>
+        <div class="col-span-2">
+            
+        </div>
+        <div class="col-span-1"></div>
+    </div>
+</Layout>   
+ 
