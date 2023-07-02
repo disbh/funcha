@@ -51,11 +51,11 @@ const { Content } = await recipe.render()
                 }
             </div>
             <h3 class="text-center mt-6">Related</h3>
-            <ul>
+            <div class="flex flex-col justify-center">
                 {
-                    recipe.data.related.map((relation) => <hr class="my-3 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" style="background-color: rgb(245 245 245);"/><li class="text-center font-normal hover:underline text-xl">{ relation }</li>)
+                    recipe.data.related.map((relation) => <hr class="my-3 mx-12 h-0.5 border-t-0 text-center bg-neutral-100 opacity-100 dark:opacity-50" style="background-color: rgb(245 245 245);"/><span class="text-center font-normal hover:underline text-xl">{ relation }</span>)
                 }
-            </ul>
+            </div>
         </div>
         <div class="container mx-auto px-0 md:pr-[2.5vw] lg:pr-[5vw] mt-4">
             <h1 class="text-center my-4">{ recipe.data.title }</h1>
@@ -64,8 +64,15 @@ const { Content } = await recipe.render()
             <h1 class="my-12 text-center">Introduction</h1>
             <p class="text-xl my-3">{ recipe.data.introduction }</p>
             <Content/>
+            <div class="h-0 my-12"></div>
         </div>
     </div>
+    <style is:inline >
+        p, li {
+            font-size: 1.25rem !important;
+            line-height: 1.75rem !important;
+        }
+    </style>
     
 </Layout>   
 
