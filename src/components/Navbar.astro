@@ -1,4 +1,4 @@
-<nav class="justify-center bg-[#d77746] content-center text-center w-[95%]  text-white mb-4 p-2 mx-auto  rounded-b-lg">
+<nav class="sticky transition-all duration-700 top-0 z-[100000] drop-shadow-2xl shadow-2xl justify-center bg-[#d77746] content-center text-center w-[95%]  text-white mb-4 p-2 mx-auto  rounded-b-lg">
   <div class="overflow-hidden bg-[rgb(150,84,31)] shadow-2xl rounded-lg">
     <a href="/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mr-2 hover:bg-white transition-all">funCha</a>
     <a href="/about/" class="float-left text-base text-white text-center no-underline px-4 py-3.5 hover:text-black mx-2 hover:bg-white transition-all">About</a>
@@ -18,3 +18,34 @@
   </div>
 
 </nav>
+<div class="spot"></div>
+
+<script>
+// element references
+const navbar = document.querySelector("nav");
+const spot = document.querySelector(".spot");
+
+// handler
+const handleScroll = (entries) => {
+  const spotIsVisible = entries[0].isIntersecting;
+  if (spotIsVisible) {
+    navbar.classList.remove("shadow-2xl");
+    navbar.classList.remove("drop-shadow-2xl");
+  }
+  else {
+    navbar.classList.add("shadow-2xl");
+    navbar.classList.add("drop-shadow-2xl");
+  }
+};
+
+
+const options = {
+  root: null, 
+  rootMargin: "0px", 
+  threshhold: 0, 
+};
+
+// initialize and start the observer.
+const observer = new IntersectionObserver(handleScroll, options);
+observer.observe(spot);
+</script>

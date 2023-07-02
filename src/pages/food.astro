@@ -16,7 +16,7 @@ import RecipeCard from '../components/RecipeCard.astro';
 <Layout title="Funcha">
 	<h1 class="text-6xl text-left container mx-auto px-[5vw] font-bold">Recipes</h1>
 
-	<div class="flex flex-col my-12 mt-8 container mx-auto px-[5vw] gap-6">
+	<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-12 mt-8 container mx-auto px-[5vw] gap-6">
 		{
 			recipes.map((recipe) => 
 				<RecipeCard

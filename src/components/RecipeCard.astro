@@ -10,10 +10,10 @@ export interface Props {
 const { title, description, url, tags, allergens, slug } = Astro.props;
 ---
 
-<a class=" rounded-lg group flex md:flex-row flex-col border-2 bg-white border-solid border-base hover:-translate-y-4 hover:border-transparent hover:drop-shadow-xl hover:shadow-xl transition-all duration-200  delay-75 " href=`/recipes/${ slug }`>
-  <img src={ url } alt=`${title} Image` class="aspect-square bg-contain  transition-all object-cover md:max-w-[20vw] rounded-l-lg">
+<a class=" rounded-lg group flex flex-col w-full border-2 bg-white shadow-inner hover:-translate-y-4 hover:drop-shadow-xl hover:shadow-xl transition-all duration-200  delay-75 " href=`/recipes/${ slug }`>
+  <img src={ url } alt=`${title} Image` class="aspect-square bg-contain  transition-all object-cover rounded-t-lg">
   <div class="px-8 py-4">
-    <h3 class="text-3xl font-bold mb-3">{ title }</h3>
+    <h2>{ title }</h2>
     <div class="flex flex-row flex-wrap gap-3 my-4">
       {
         tags.map((tag) => <span class="hover:brightness-[0.75] transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#eab89f]/75 text-orange-950 rounded-full px-3">{ tag }</span>)
