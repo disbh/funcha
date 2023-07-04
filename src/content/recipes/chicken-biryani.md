@@ -30,6 +30,36 @@ ingredients:
 - Cinnamon
 - Black Cumin Seeds
 - Salt
+- Chicken
+- Rice
+- Paprika
+- Chilli Peppers
+- Garam Masala
+- Bay Leaves
+- Star Anise
+- Cinnamon
+- Black Cumin Seeds
+- Salt
+- Chicken
+- Rice
+- Paprika
+- Chilli Peppers
+- Garam Masala
+- Bay Leaves
+- Star Anise
+- Cinnamon
+- Black Cumin Seeds
+- Salt
+- Chicken
+- Rice
+- Paprika
+- Chilli Peppers
+- Garam Masala
+- Bay Leaves
+- Star Anise
+- Cinnamon
+- Black Cumin Seeds
+- Salt
 ---
 
 ## Ingredients 

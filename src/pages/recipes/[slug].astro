@@ -29,7 +29,7 @@ const { Content } = await recipe.render()
 ---
 <Layout title=`How to Make ${ recipe.data.title }`>
     <div class="flex flex-row gap-8">
-        <div class="left-0 sticky top-24 w-[50vw] max-md:hidden max-h-screen border-r-2 border-slate-200 mb-3">
+        <div class="left-0 sticky top-24 w-[50vw] max-md:hidden max-h-screen overflow-y-auto border-r-2 border-slate-200 mb-3">
             <h3 class="text-center">Tags</h3>
             <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
                 {
@@ -61,7 +61,7 @@ const { Content } = await recipe.render()
             <h1 class="text-center my-4">{ recipe.data.title }</h1>
 
             <div style=`background-image: url('${ recipe.data.image_urls[0] }')` class="bg-cover h-[80vh] w-full md:rounded-lg bg-no-repeat bg-center" />
-            <h1 class="my-12 text-center">Introduction</h1>
+            <h2 class="my-12 text-center">Introduction</h2>
             <p class="text-xl my-3">{ recipe.data.introduction }</p>
             <Content/>
             <div class="h-0 my-12"></div>

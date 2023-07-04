@@ -58,6 +58,32 @@ import Preloader from '../components/Preloader.astro';
 			ol {
 				list-style-type: decimal !important;
 			}
+			*::-webkit-scrollbar {
+				opacity: 0;
+				width: 20px;
+				transition: opacity 0.3s ease-in-out;
+			}
+			*:hover::-webkit-scrollbar {
+				opacity: 1;
+				transition: opacity 0.3s ease-in-out;
+				width: 20px;
+			}
+
+			*:hover::-webkit-scrollbar-track {
+				background-color: transparent;
+				
+			}
+
+			*:hover::-webkit-scrollbar-thumb {
+				background-color: rgba(193, 193, 193, 0.5);
+				border-radius: 20px;
+				border: 7px solid transparent;
+				background-clip: content-box;
+			}
+
+			*:hover::-webkit-scrollbar-thumb:hover {
+				background-color: rgba(193, 193, 193, 1);
+			}
 		</style>
 	</head>
 	<body class="overflow-x-hidden">
