@@ -14,8 +14,22 @@ module.exports = {
   //     fontA: ['Karla', 'sans-serif'],
   //     fontB: []
   //   },
-    
+
   //   extend: {},
   // },
+  theme: {
+    extend: {
+      colors: {
+        "dark-text": "#FFFFFF",
+        "dark-bg": "#221710",
+        "dark-secondary": "#2e1810",
+        "light-text": "#221710",
+        "light-bg": "#FFFFFF",
+        "light-secondary": "#f1ddd5",
+        primary: "#553725",
+        accent: "#191011",
+      },
+    },
+  },
   plugins: [],
 };

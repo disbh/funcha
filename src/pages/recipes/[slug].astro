@@ -1,79 +1,117 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
-import Layout from '../../layouts/Layout.astro'
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const recipes = await getCollection('recipes');
-    console.log(recipes)
-    
-    const returnable =  recipes.map(recipe => {
-        return {
-            params: {
-                slug: recipe.slug,
-            },
-            props: {
-                recipe,
-            },
-        };
-    });
-    return returnable;
-    
+  const recipes = await getCollection("recipes");
+  console.log(recipes);
+
+  const returnable = recipes.map((recipe) => {
+    return {
+      params: {
+        slug: recipe.slug,
+      },
+      props: {
+        recipe,
+      },
+    };
+  });
+  return returnable;
 }
 
 interface Props {
-    recipe: CollectionEntry<'recipes'>;
+  recipe: CollectionEntry<"recipes">;
 }
 
-const { recipe }  = Astro.props;
-const { Content } = await recipe.render()
+const { recipe } = Astro.props;
+const { Content } = await recipe.render();
 ---
+
 <Layout title=`How to Make ${ recipe.data.title }`>
-    <div class="flex flex-row gap-8">
-        <div class="left-0 sticky top-24 w-[50vw] max-md:hidden max-h-screen overflow-y-auto border-r-2 border-slate-200 mb-3">
-            <h3 class="text-center">Tags</h3>
-            <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
-                {
-                    recipe.data.tags.map((tag) => <span class="hover:brightness-[0.75] text-sm transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#eab89f]/75 text-orange-950 rounded-full px-3">{ tag }</span>)
-                }
-            </div>
-            <hr class="my-4 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" style="background-color: rgb(245 245 245);" />
-        <h3 class="text-center">Allergens</h1>
-            <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
-                {
-                    recipe.data.allergens.map((allergen) => <span class="hover:brightness-[0.5] text-sm transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#9b4a22]/50 text-orange-950 rounded-full px-3">{ allergen }</span>)
-                }
-            </div>
-            <hr class="my-4 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" style="background-color: rgb(245 245 245);" />
-        <h3 class="text-center">Ingredients</h3>
-            <div class="flex justify-center flex-row flex-wrap  mx-14 gap-3 my-2">
-                {
-                    recipe.data.ingredients.map((ingredient) => <span class="hover:brightness-[0.75] transition-all drop-shadow-md shadow-md duration-1000 select-none bg-[#eab89f]/75 text-orange-950 rounded-full text-sm px-3">{ ingredient }</span>)
-                }
-            </div>
-            <h3 class="text-center mt-6">Related</h3>
-            <div class="flex flex-col justify-center">
-                {
-                    recipe.data.related.map((relation) => <hr class="my-3 mx-12 h-0.5 border-t-0 text-center bg-neutral-100 opacity-100 dark:opacity-50" style="background-color: rgb(245 245 245);"/><span class="text-center font-normal hover:underline text-xl">{ relation }</span>)
-                }
-            </div>
-        </div>
-        <div class="container mx-auto px-0 md:pr-[2.5vw] lg:pr-[5vw] mt-4">
-            <h1 class="text-center my-4">{ recipe.data.title }</h1>
-
-            <div style=`background-image: url('${ recipe.data.image_urls[0] }')` class="bg-cover h-[80vh] w-full md:rounded-lg bg-no-repeat bg-center" />
-            <h2 class="my-12 text-center">Introduction</h2>
-            <p class="text-xl my-3">{ recipe.data.introduction }</p>
-            <Content/>
-            <div class="h-0 my-12"></div>
-        </div>
-    </div>
-    <style is:inline >
-        p, li {
-            font-size: 1.25rem !important;
-            line-height: 1.75rem !important;
+  <div class="flex flex-row gap-8">
+    <div
+      class="left-0 sticky top-24 w-[50vw] max-md:hidden max-h-[calc(100vh-6rem)] overflow-y-auto border-r-2 border-slate-200 pb-3"
+    >
+      <h3 class="text-center dark:text-dark-text text-light-text">Tags</h3>
+      <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
+        {
+          recipe.data.tags.map((tag) => (
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-accent text-dark-text rounded-full px-3">
+              {tag}
+            </span>
+          ))
         }
-    </style>
-    
-</Layout>   
+      </div>
+      <hr
+        class="my-4 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
+        style="background-color: rgb(245 245 245);"
+      />
+      <h3 class="text-center dark:text-dark-text text-light-text">Allergens</h3>
+      <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
+        {
+          recipe.data.allergens.map((allergen) => (
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-primary text-dark-text rounded-full px-3">
+              {allergen}
+            </span>
+          ))
+        }
+      </div>
+      <hr
+        class="my-4 mx-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
+        style="background-color: rgb(245 245 245);"
+      />
+      <h3 class="text-center dark:text-dark-text text-light-text">
+        Ingredients
+      </h3>
+      <div class="flex justify-center flex-row flex-wrap mx-14 gap-3 my-2">
+        {
+          recipe.data.ingredients.map((ingredient) => (
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-accent text-dark-text rounded-full px-3 text-center">
+              {ingredient}
+            </span>
+          ))
+        }
+      </div>
+      <h3 class="text-center dark:text-dark-text text-light-text mt-6">
+        Related
+      </h3>
+      <div class="flex flex-col justify-center">
+        {
+          recipe.data.related.map((relation) => (
+            <>
+              <hr
+                class="my-3 mx-12 h-0.5 border-t-0 text-center bg-neutral-100 opacity-100 dark:opacity-50"
+                style="background-color: rgb(245 245 245);"
+              />
+              <span class="text-center dark:text-dark-text text-light-text font-normal hover:underline text-xl">
+                {relation}
+              </span>
+            </>
+          ))
+        }
+      </div>
+    </div>
+    <div class="container mx-auto px-0 md:pr-[2.5vw] lg:pr-[5vw] mt-4">
+      <h1 class="text-center my-4">{recipe.data.title}</h1>
 
- 
+      <div
+        style=`background-image: url('${ recipe.data.image_urls[0] }')`
+        class="bg-cover h-[80vh] w-full md:rounded-lg bg-no-repeat bg-center"
+      >
+      </div>
+      <h2 class="my-12 text-center">Introduction</h2>
+      <p class="text-xl my-3 dark:text-dark-text text-light-text">
+        {recipe.data.introduction}
+      </p>
+      <Content />
+      <div class="h-0 my-12"></div>
+    </div>
+  </div>
+  <style is:inline>
+    p,
+    li {
+      font-size: 1.25rem !important;
+      line-height: 1.75rem !important;
+    }
+  </style>
+</Layout>

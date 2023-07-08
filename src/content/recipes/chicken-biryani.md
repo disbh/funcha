@@ -2,64 +2,67 @@
 draft: false
 title: Chicken Biryani
 related:
-- Goat Biryani
-- Chicken Curry
-- Lamb Chops
+  - Goat Biryani
+  - Chicken Curry
+  - Lamb Chops
 tags:
-- Chicken
-- Non-Veg
+  - Chicken
+  - Non-Veg
 allergens:
-- Soy
-- Egg
+  - Soy
+  - Egg
 
 image_urls:
-- "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
-- "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
-- "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
+  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
+  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
+  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
 
 introduction: Each grain of basmati rice, kissed by saffron's golden hue, beckons the eager palate. Succulent pieces of tender chicken, marinated to perfection, nestle amidst the tapestry of flavors, their juices melding with the rice to create a symphony of taste. With each delicate bite, a burst of complexity ensues—cumin and coriander impart earthy undertones, while cloves and cardamom weave a subtle warmth. The heat of green chili and the tang of lemon elevate the dish, creating a harmonious balance that ignites the taste buds.
 
 ingredients:
-- Chicken
-- Rice
-- Paprika
-- Chilli Peppers
-- Garam Masala
-- Bay Leaves
-- Star Anise
-- Cinnamon
-- Black Cumin Seeds
-- Salt
+  - Chicken
+  - Rice
+  - Paprika
+  - Chilli Peppers
+  - Garam Masala
+  - Bay Leaves
+  - Star Anise
+  - Cinnamon
+  - Black Cumin Seeds
+  - Salt
 ---
 
-## Ingredients 
+## Ingredients
 
 ### For the Chicken Marination:
-* 500g chicken, cut into pieces
-* 1 cup plain yogurt
-* 1 tablespoon ginger-garlic paste
-* 2 teaspoons Biryani masala powder
-* 1 teaspoon turmeric
-* Salt to taste
+
+- 500g chicken, cut into pieces
+- 1 cup plain yogurt
+- 1 tablespoon ginger-garlic paste
+- 2 teaspoons Biryani masala powder
+- 1 teaspoon turmeric
+- Salt to taste
 
 ### For the Rice:
-* 2 cups Basmati rice
-* 4 cups water
-* 2 bay leaves
-* 4 cloves
-* 1 star anise
-* 1 cinnamon stick
+
+- 2 cups Basmati rice
+- 4 cups water
+- 2 bay leaves
+- 4 cloves
+- 1 star anise
+- 1 cinnamon stick
 
 ### For the Biryani:
-* 2 onions, finely sliced
-* 2 tomatoes, finely chopped
-* 2 green chilies, slit
-* A handful of chopped coriander leaves
-* A handful of chopped mint leaves
-* 1 tablespoon ghee
-* 2 tablespoons oil
-* 1 teaspoon Biryani masala powder
-* Salt to taste
+
+- 2 onions, finely sliced
+- 2 tomatoes, finely chopped
+- 2 green chilies, slit
+- A handful of chopped coriander leaves
+- A handful of chopped mint leaves
+- 1 tablespoon ghee
+- 2 tablespoons oil
+- 1 teaspoon Biryani masala powder
+- Salt to taste
 
 ## Marination Process
 
@@ -84,4 +87,3 @@ ingredients:
 ## Serving Chicken Biryani
 
 Serve the Chicken Biryani hot, garnished with more coriander and mint leaves. You can accompany it with raita or your favorite curry. Enjoy!
-

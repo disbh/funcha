@@ -6,9 +6,11 @@ export interface Props {
 const { title, description } = Astro.props;
 ---
 
-<div class=" rounded-lg flex-1 px-8 py-4 border-2 border-solid border-neutral-200 hover:-translate-y-6 hover:border-transparent hover:drop-shadow-xl hover:shadow-xl transition-all duration-300  delay-75 ">
-  <h2>{ title }</h2>
-  <p>
-    { description }
+<div
+  class="dark:bg-dark-text/[0.03] bg-light-text/[0.03] rounded-lg flex-1 px-8 py-4 hover:-translate-y-6 hover:border-transparent hover:shadow-2xl shadow-primary transition-all duration-300 text-balance delay-75"
+>
+  <h2 class="dark:text-dark-text text-light-text">{title}</h2>
+  <p class="dark:text-dark-text text-light-text">
+    {description}
   </p>
 </div>

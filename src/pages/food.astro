@@ -1,33 +1,39 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 
-const recipes = await getCollection('recipes', (recipe) => {
-	// console.log(recipe.data.title)
-	// console.log(recipe.data.tags)
-	// console.log(recipe.data.allergens)
-	// console.log(recipe.data.introduction)
-	return recipe.data.draft === false;
+const recipes = await getCollection("recipes", (recipe) => {
+  // console.log(recipe.data.title)
+  // console.log(recipe.data.tags)
+  // console.log(recipe.data.allergens)
+  // console.log(recipe.data.introduction)
+  return recipe.data.draft === false;
 });
 
-import RecipeCard from '../components/RecipeCard.astro'; 
+import RecipeCard from "../components/RecipeCard.astro";
 ---
 
 <Layout title="Funcha">
-	<h1 class="text-6xl text-left container mx-auto px-[5vw] font-bold">Recipes</h1>
+  <h1
+    class="text-6xl text-left container mx-auto px-[5vw] font-bold dark:text-dark-text text-light-text"
+  >
+    Recipes
+  </h1>
 
-	<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-12 mt-8 container mx-auto px-[5vw] gap-6">
-		{
-			recipes.map((recipe) => 
-				<RecipeCard
-					title={ recipe.data.title }
-					description={ recipe.data.introduction }
-					url={ recipe.data.image_urls[0] }
-					tags={ recipe.data.tags }
-					allergens={ recipe.data.allergens }
-					slug={ recipe.slug }
-				></RecipeCard>
-			)
-		}
-	</div>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-12 mt-8 container mx-auto px-[5vw] gap-6"
+  >
+    {
+      recipes.map((recipe) => (
+        <RecipeCard
+          title={recipe.data.title}
+          description={recipe.data.introduction}
+          url={recipe.data.image_urls[0]}
+          tags={recipe.data.tags}
+          allergens={recipe.data.allergens}
+          slug={recipe.slug}
+        />
+      ))
+    }
+  </div>
 </Layout>
