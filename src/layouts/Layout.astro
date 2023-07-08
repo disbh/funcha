@@ -92,14 +92,14 @@ import Preloader from "../components/Preloader.astro";
         background-clip: content-box;
       }
 
-      *::-webkit-scrollbar-thumb:hover {
-        background-color: rgba(193, 193, 193, 1);
-      }
-    </style>
-  </head>
-  <body class="overflow-x-hidden bg-light-bg dark:bg-dark-bg">
-    <Navbar />
-    <slot />
-    <Footer />
-  </body>
+			*:hover::-webkit-scrollbar-thumb:hover {
+				background-color: rgba(193, 193, 193, 1);
+			}
+		</style>
+	</head>
+	<body class="overflow-x-hidden">
+		<Navbar></Navbar>
+		<slot />
+		<Footer></Footer>
+	</body>
 </html>
