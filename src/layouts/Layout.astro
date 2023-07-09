@@ -26,7 +26,7 @@ import Preloader from "../components/Preloader.astro";
         line-height: 1 !important;
         font-weight: 700 !important;
         text-align: center !important;
-        color: black !important;
+        color: black;
         text-align: center !important;
       }
 
@@ -35,7 +35,7 @@ import Preloader from "../components/Preloader.astro";
         font-size: 1.875rem !important;
         line-height: 2.25rem !important;
         font-weight: 600 !important;
-        color: black !important;
+        color: black;
         text-align: center !important;
       }
 
@@ -43,19 +43,17 @@ import Preloader from "../components/Preloader.astro";
         font-size: 1.5rem !important;
         line-height: 2rem !important;
         font-weight: 500 !important;
-        color: black !important;
+        color: black;
         text-align: center !important;
       }
 
-      @media (prefers-color-scheme: dark) {
-        h1,
-        h2,
-        h3,
-        ul,
-        ol,
-        p {
-          color: white !important;
-        }
+      html.dark h1,
+      html.dark h2,
+      html.dark h3,
+      html.dark ul,
+      html.dark ol,
+      html.dark p {
+        color: white;
       }
 
       body {
@@ -97,10 +95,14 @@ import Preloader from "../components/Preloader.astro";
       }
     </style>
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove("dark");
       }
     </script>
   </head>

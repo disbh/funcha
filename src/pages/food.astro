@@ -27,7 +27,9 @@ import RecipeCard from "../components/RecipeCard.astro";
       recipes.map((recipe) => (
         <RecipeCard
           title={recipe.data.title}
-          description={recipe.data.introduction}
+          description={
+            recipe.data.introduction.split(".").slice(0, 3).join(".") + "."
+          }
           url={recipe.data.image_urls[0]}
           tags={recipe.data.tags}
           allergens={recipe.data.allergens}

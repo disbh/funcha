@@ -1,7 +1,7 @@
 <nav
-  class="sticky transition-all duration-700 top-0 z-[100000] justify-center content-center text-center w-[95%] dark:text-dark-text text-light-text mb-4 p-2 mx-auto rounded-b-lg"
+  class="sticky transition-all duration-300 top-0 z-[100000] justify-center content-center text-center w-[95%] dark:text-dark-text text-light-text mb-4 p-2 mx-auto rounded-b-lg"
 >
-  <div class="overflow-hidden nav rounded-lg transition-all duration-700">
+  <div class="overflow-hidden nav rounded-lg transition-all duration-300">
     <a
       href="/"
       class="float-left hover:text-white text-center no-underline px-4 py-3.5 hover:bg-primary transition-all duration-[400ms]"
@@ -31,10 +31,10 @@
       class="float-right hover:text-white text-center no-underline px-4 py-3.5 hover:bg-primary transition-all h-[3.25rem] w-14 duration-[400ms] wrap"
     >
       <div
-        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-white front"
+        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-dark-text front"
       >
         <svg
-          class="w-6 h-6 dark:fill-white fill-black"
+          class="w-6 h-6 dark:fill-dark-text fill-light-text"
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +119,10 @@
         </svg>
       </div>
       <div
-        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-white back"
+        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-dark-text back"
       >
         <svg
-          class="w-6 h-6 dark:stroke-white stroke-black dark:fill-white fill-black"
+          class="w-6 h-6 dark:stroke-dark-text stroke-light-text dark:fill-dark-text fill-light-text"
           version="1.1"
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -214,20 +214,22 @@
       element.classList.toggle("front");
       element.classList.toggle("back");
     });
+
+    document.documentElement.classList.toggle("dark");
   });
 </script>
 
 <style is:inline>
   .front {
     animation: front 700ms 1;
-    transition: z-index 700ms;
+    transition: z-index 700ms ease-in-out;
     animation-fill-mode: forwards;
     z-index: 10;
   }
 
   .back {
     animation: back 700ms 1;
-    transition: z-index 700ms;
+    transition: z-index 700ms ease-in-out;
     animation-fill-mode: forwards;
     z-index: 0;
   }

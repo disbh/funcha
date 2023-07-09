@@ -21,9 +21,9 @@ module.exports = {
     extend: {
       colors: {
         "dark-text": "#FFFFFF",
-        "dark-bg": "#734f38",
+        "dark-bg": "#221710",
         "dark-secondary": "#2e1810",
-        "light-text": "#734f38",
+        "light-text": "#221710",
         "light-bg": "#FFFFFF",
         "light-secondary": "#f1ddd5",
         primary: "#553725",
