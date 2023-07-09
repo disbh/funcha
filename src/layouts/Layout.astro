@@ -96,6 +96,13 @@ import Preloader from "../components/Preloader.astro";
         background-color: rgba(193, 193, 193, 1);
       }
     </style>
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
   <body class="overflow-x-hidden dark:bg-dark-bg bg-light-bg">
     <Navbar />
