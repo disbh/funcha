@@ -7,10 +7,15 @@ async function readFirestore(slug) {
     
     if (docSnap.exists()) {
       console.log("Document data:", docSnap.data());
+      return docSnap.data();
     } else {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
+      return null;
     }
     
 }
 
+
+
+export default readFirestore;

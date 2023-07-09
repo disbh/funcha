@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import writeFirestore from "../writeFirestore.js";
+import readFirestore from "../readFirestore.js";
 
 const recipes = await getCollection("recipes", (recipe) => {
   // console.log(recipe.data.title)
@@ -10,10 +12,38 @@ const recipes = await getCollection("recipes", (recipe) => {
   return recipe.data.draft === false;
 });
 
+function formatSlug(slug) {
+  let words = slug.split("-");
+  let formattedWords = words.map(function (word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+  let title = formattedWords.join(" ");
+  return title;
+}
+
+
+
 import RecipeCard from "../components/RecipeCard.astro";
 ---
 
 <Layout title="Funcha">
+	<script is:inline>
+		// Create a firestore article in the articles collection for every markdown file
+		const articles = { recipes }
+		articles.forEach((recipe) => {
+			console.log(recipe.slug)
+			const templateData = {
+				title: formatSlug(recipe.slug),
+				likes: 0,
+				comments: [],
+			};
+			if (readFirestore(recipe.slug)) {
+				console.log("Recipe already exists in firestore");
+				return;
+			}
+			writeFirestore(recipe.slug, templateData);
+		});
+	</script>
   <h1
     class="text-6xl text-left container mx-auto px-[5vw] font-bold dark:text-dark-text text-light-text"
   >

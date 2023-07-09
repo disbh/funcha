@@ -23,10 +23,6 @@ async function writeFirestore(slug, data) {
     await setDoc(doc(articles, slug), data);
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    const slug = "new-test";
-    console.log("writeFirestore.js: slug: ", slug);
-    writeFirestore(slug, templateData);
-})
+
 
 export default writeFirestore;
