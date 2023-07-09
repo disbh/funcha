@@ -1,5 +1,5 @@
 <nav
-  class="sticky transition-all duration-300 top-0 z-[100000] justify-center content-center text-center w-[95%] dark:text-dark-text text-light-text mb-4 p-2 mx-auto rounded-b-lg"
+  class="sticky transition-all duration-300 top-0 z-[100000] justify-center content-center text-center w-[95%] dark:text-dark-text text-light-text group-hover:text-dark-text mb-4 p-2 mx-auto rounded-b-lg"
 >
   <div class="overflow-hidden nav rounded-lg transition-all duration-300">
     <a
@@ -28,13 +28,13 @@
       >Food
     </a>
     <div
-      class="float-right hover:text-white text-center no-underline px-4 py-3.5 hover:bg-primary transition-all h-[3.25rem] w-14 duration-[400ms] wrap"
+      class="float-right hover:text-white text-center no-underline px-4 py-3.5 hover:bg-primary transition-all h-[3.25rem] w-14 duration-[400ms] wrap group"
     >
       <div
-        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-dark-text front"
+        class="light-dark light absolute w-20 aspect-square text-dark-text front"
       >
         <svg
-          class="w-6 h-6 dark:fill-dark-text fill-light-text"
+          class="w-6 h-6 dark:fill-dark-text fill-light-text group-hover:fill-dark-text transition-all duration-[400ms]"
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +119,10 @@
         </svg>
       </div>
       <div
-        class="light-dark absolute w-20 aspect-square text-center leading-[72px] text-dark-text back"
+        class="light-dark night absolute w-20 aspect-square text-center leading-[72px] text-dark-text back"
       >
         <svg
-          class="w-6 h-6 dark:stroke-dark-text stroke-light-text dark:fill-dark-text fill-light-text"
+          class="w-6 h-6 dark:stroke-dark-text stroke-light-text group-hover:stroke-dark-text dark:fill-dark-text fill-light-text group-hover:fill-dark-text transition-all duration-[400ms]"
           version="1.1"
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,6 @@
       navbar.children[0].classList.add("text-black");
       navbar.children[0].classList.add("bg-light-secondary");
     }
-    console.log(dropdown);
   };
 
   const options = {
@@ -200,10 +199,10 @@
   observer.observe(spot);
 
   //DARK/LIGHT MODE
-  var wrapper = document.querySelector(".wrap");
+  let wrapper = document.querySelector(".wrap");
   wrapper.addEventListener("click", () => {
-    var frontElements = document.querySelectorAll(".front");
-    var backElements = document.querySelectorAll(".back");
+    let frontElements = document.querySelectorAll(".front");
+    let backElements = document.querySelectorAll(".back");
 
     frontElements.forEach((element) => {
       element.classList.toggle("front");
@@ -216,6 +215,22 @@
     });
 
     document.documentElement.classList.toggle("dark");
+  });
+
+  let light = document.querySelector(".light");
+  let night = document.querySelector(".night");
+  window.addEventListener("DOMContentLoaded", () => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      light.classList.remove("front");
+      light.classList.add("back");
+      night.classList.remove("back");
+      night.classList.add("front");
+    } else {
+      night.classList.remove("front");
+      night.classList.add("back");
+      light.classList.remove("back");
+      light.classList.add("front");
+    }
   });
 </script>
 
