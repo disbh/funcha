@@ -30,6 +30,10 @@ ingredients:
   - Cinnamon
   - Black Cumin Seeds
   - Salt
+
+prep_time: 75
+
+cook_time: 35
 ---
 
 # ioiweoroie
