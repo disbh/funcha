@@ -41,7 +41,7 @@ let firestoreData = await readFirestore(recipe.slug);
       <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
         {
           recipe.data.tags.map((tag) => (
-            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-accent text-dark-text rounded-full px-3">
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.8] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none dark:bg-accent bg-light-secondary dark:text-dark-text text-light-text rounded-full px-3">
               {tag}
             </span>
           ))
@@ -55,7 +55,7 @@ let firestoreData = await readFirestore(recipe.slug);
       <div class="flex justify-center flex-row flex-wrap gap-3 my-2">
         {
           recipe.data.allergens.map((allergen) => (
-            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-primary text-dark-text rounded-full px-3">
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.1] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none dark:bg-primary bg-primary/25 dark:text-dark-text text-light-text rounded-full px-3">
               {allergen}
             </span>
           ))
@@ -71,7 +71,7 @@ let firestoreData = await readFirestore(recipe.slug);
       <div class="flex justify-center flex-row flex-wrap mx-14 gap-3 my-2">
         {
           recipe.data.ingredients.map((ingredient) => (
-            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.5] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none bg-accent text-dark-text rounded-full px-3 text-center">
+            <span class="dark:hover:brightness-[0.75] hover:brightness-[0.8] transition-all light:drop-shadow-md light:shadow-md duration-1000 select-none dark:bg-accent bg-light-secondary dark:text-dark-text text-light-text rounded-full px-3 text-center">
               {ingredient}
             </span>
           ))
