@@ -10,8 +10,8 @@ async function readFirestore(slug) {
       return docSnap.data();
     } else {
       // docSnap.data() will be undefined in this case
-      console.log("No such document!");
-      return null;
+      console.log("No such document with slug: ", slug, " in Firestore!");
+      return false;
     }
     
 }
