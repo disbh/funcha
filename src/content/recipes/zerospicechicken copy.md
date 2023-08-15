@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Mangsher Gorgora
+title: Zero Spice Chicken
 related:
   - Chicken Biryani
   - Goat Curry
@@ -18,51 +18,34 @@ image_urls:
 introduction: "Introducing 'Mangsher Gorgora': a delightful Bengali recipe that showcases the rich flavors of marinated mutton cooked to perfection. This aromatic dish is a celebration of tender mutton pieces infused with a medley of traditional spices. The marinade, comprising a blend of aromatic ingredients, enhances the meat's succulence while imparting a captivating aroma. The mutton is then pan-fried until golden, resulting in irresistible caramelization. A touch of homemade spice paste adds depth and complexity to the dish. Finally, the meat is pressure-cooked until tender, achieving a melt-in-your-mouth texture. To elevate the flavors, a finishing touch of ghee and Garam Masala powder entices your palate with a burst of warmth and indulgence. Get ready to embark on a culinary journey with this mouthwatering Bengali delicacy."
 
 ingredients:
-  - 100 g Yogurt
-  - 1 Tsp Ginger Paste
-  - 1 Tsp Garlic Paste
-  - 1 Tsp Turmeric
-  - 1 - 2 Red Chilis
-  - Kashmiri Mirch 1.5 tsp
-  - 2 - 3 Bay Leaves
-  - 2 Medium Onions, sliced into quarters
-  - Mustard Oil
-  - Ghee
-  - Whole Garam Masala, Nutmeg, and Mace Ghee
-  - Sugar and Salt
+  - 1 kg Chicken Thighs
+  - 2 Onions, sliced into quarters
+  - 2 Tomatoes, sliced into quarters
+  - 1.5 Tbsp Grated Ginger
+  - 2 Red Chilies, with inside seeds removed
+  - 3 - 4 Tbsp Vegetable Oil
+  - 2 Tsp Sugar
+  - Salt to taste
 ---
 
 ## Ingredients
 
-### To Marinate the Chicken
-
-- 500g Mutton
-- 100g Plain Yogurt
-- 1.5 teaspoons Kashmiri Mirch
-- 1 teaspoon ginger paste
-- 1 teaspoon turmeric
-- 1 - 2 Red Chilis
-- Mustard Oil
-- Salt to taste
-
-## Marination Process
-
-1. Combine all listed ingredients above.
-2. Mix well, ensuring each piece is well coated with the marinade.
-3. Cover the bowl and refrigerate for at least 2 hours, or overnight for best results.
-
 ## Cooking Process
 
-1. Take out the marinated chicken and let rest
-2. Heat oil in skillet and fry the onions until brown
-3. Set the onions aside and in the same pan, use the remaining oil and add Sugar 1 tsp
-4. Once the sugar starts caramelizing, add 2 bay leaves
-5. Add crushed Garam Masala
-6. When aroma releases add Marinated Mutton
-7. Pour water in the left over the marinade and keep it aside
-8. Blend the fried onions, some raisins, nutmeg, and mace to a fine waste
-9. Add the paste to the mutton and mix well
-10. Fry for 10 minutes and add the marinade water
-11. Mix well and transfer to a pressure cooker
-12. Cook until the mutton is tender
-13. Finish off with ghee and Garam Masala powder
+1. Place 1 kg of chicken into a skillet set to medium heat.
+2. Place all onions and tomatoes synonomously to the chicken.
+3. Add all of.
+4. Add 5 large garlic cloves.
+5. Get 2 red chilies and remove the seeds from the inside to reduce the spice.
+6. Add 3-4 tablespoons of vegetable oil.
+7. Add salt to taste along with 2 teaspoons of sugar.
+8. Mix all the ingredients well.
+9. Start cooking on high heat.
+10. Soon, water will start coming out of the chicken and veggies. It's alright, just keep mixing.
+11. Bring the chicken to a boil while mixing.
+12. Put the stove to medium heat.
+13. Close the lid and cook until the chicken is almost tender.
+14. The oil should start coming out.
+15. Mix some more.
+16. Add 2 cups of water and cook until the chicken is done.
+
