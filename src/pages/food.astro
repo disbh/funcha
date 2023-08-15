@@ -21,29 +21,25 @@ function formatSlug(slug) {
   return title;
 }
 
-
+const articles = recipes;
+articles.forEach(async (recipe) => {
+  // console.log(recipe.slug);
+  const templateData = {
+    title: formatSlug(recipe.slug),
+    likes: 0,
+    comments: [],
+  };
+  if (await readFirestore(recipe.slug)) {
+    console.log("Recipe already exists in firestore: " + recipe.slug);
+    return;
+  }
+  writeFirestore(recipe.slug, templateData);
+});
 
 import RecipeCard from "../components/RecipeCard.astro";
 ---
 
 <Layout title="Funcha">
-	<script is:inline>
-		// Create a firestore article in the articles collection for every markdown file
-		const articles = { recipes }
-		articles.forEach((recipe) => {
-			console.log(recipe.slug)
-			const templateData = {
-				title: formatSlug(recipe.slug),
-				likes: 0,
-				comments: [],
-			};
-			if (readFirestore(recipe.slug)) {
-				console.log("Recipe already exists in firestore");
-				return;
-			}
-			writeFirestore(recipe.slug, templateData);
-		});
-	</script>
   <h1
     class="text-6xl text-left container mx-auto px-[5vw] font-bold dark:text-dark-text text-light-text"
   >
@@ -63,7 +59,7 @@ import RecipeCard from "../components/RecipeCard.astro";
           url={recipe.data.image_urls[0]}
           tags={recipe.data.tags}
           allergens={recipe.data.allergens}
-          slug={recipe.slug}
+          slug={recipe.slug} 
         />
       ))
     }

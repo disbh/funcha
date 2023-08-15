@@ -10,7 +10,7 @@ import Preloader from "../components/Preloader.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -110,8 +110,8 @@ import Preloader from "../components/Preloader.astro";
     <Navbar />
     <slot />
     <Footer />
-    <script src="../firestore.js" ></script>
-    <script src="../readFirestore.js" ></script>
-    <script src="../writeFirestore.js" ></script>
+    <script src="../firestore.js"></script>
+    <script src="../readFirestore.js"></script>
+    <script src="../writeFirestore.js"></script>
   </body>
 </html>

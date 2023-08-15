@@ -11,6 +11,8 @@ export const collections = {
       image_urls: z.array(z.string().url()),
       introduction: z.string(),
       ingredients: z.array(z.string()),
+      prep_time: z.number(),
+      cook_time: z.number(),
     }),
   }),
 };

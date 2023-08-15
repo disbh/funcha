@@ -30,6 +30,10 @@ ingredients:
   - Ghee
   - Whole Garam Masala, Nutmeg, and Mace Ghee
   - Sugar and Salt
+
+prep_time: 75
+
+cook_time: 35
 ---
 
 ## Ingredients
