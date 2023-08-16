@@ -37,8 +37,6 @@ ingredients:
   - 2 tbsp Ghee
   - Sugar to Taste
   - Salt to Taste
-prep_time: 1
-cook_time: 1 
 ---
 
 ## Ingredients

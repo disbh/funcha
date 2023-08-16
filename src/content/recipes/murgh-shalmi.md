@@ -34,8 +34,6 @@ ingredients:
   - 1 tbsp Sugar
   - Salt to Taste
   - Tomato Puree
-prep_time: 1
-cook_time: 1
 ---
 
 ## Ingredients

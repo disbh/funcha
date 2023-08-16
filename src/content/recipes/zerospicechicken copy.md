@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Zero Spice Chicken
 related:
   - Chicken Biryani
@@ -26,8 +26,6 @@ ingredients:
   - 3 - 4 Tbsp Vegetable Oil
   - 2 Tsp Sugar
   - Salt to taste
-prep_time: 1
-cook_time: 1
 ---
 
 ## Ingredients
