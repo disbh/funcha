@@ -13,9 +13,9 @@ allergens:
   - Egg
 
 image_urls:
-  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
-  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
-  - "https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-005.jpg"
+  - "https://files.catbox.moe/tra152.png"
+  - "https://files.catbox.moe/tra152.png"
+  - "https://files.catbox.moe/tra152.png"
 
 introduction: Each grain of basmati rice, kissed by saffron's golden hue, beckons the eager palate. Succulent pieces of tender chicken, marinated to perfection, nestle amidst the tapestry of flavors, their juices melding with the rice to create a symphony of taste. With each delicate bite, a burst of complexity ensues—cumin and coriander impart earthy undertones, while cloves and cardamom weave a subtle warmth. The heat of green chili and the tang of lemon elevate the dish, creating a harmonious balance that ignites the taste buds.
 
@@ -34,12 +34,9 @@ ingredients:
   - 1 tbsp Sugar
   - Salt to Taste
   - Tomato Puree
-prep_time: 1
-cook_time: 1
+prep_time: 120
+cook_time: 30
 ---
-
-## Ingredients
-
 ### Chicken Marination Process:
 
 - Place all chicken into large bowl

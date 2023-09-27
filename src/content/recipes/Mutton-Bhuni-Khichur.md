@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Zero Spice Chicken
+title: Mutton Bhuni Khichur
 related:
   - Chicken Biryani
   - Goat Curry
@@ -11,29 +11,42 @@ allergens:
   - Dairy
 
 image_urls:
-  - "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgjCoupIil3ugsNHNod3z1L9Wc4NerCN-8QQ5857eH6euY0BHBldb45-DoIxiz1WOz_g&usqp=CAU"
-  - "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgjCoupIil3ugsNHNod3z1L9Wc4NerCN-8QQ5857eH6euY0BHBldb45-DoIxiz1WOz_g&usqp=CAU"
-  - "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgjCoupIil3ugsNHNod3z1L9Wc4NerCN-8QQ5857eH6euY0BHBldb45-DoIxiz1WOz_g&usqp=CAU"
+  - "https://files.catbox.moe/qwxid4.png"
+  - "https://files.catbox.moe/qwxid4.png"
+  - "https://files.catbox.moe/qwxid4.png"
 
 introduction: "Introducing 'Mangsher Gorgora': a delightful Bengali recipe that showcases the rich flavors of marinated mutton cooked to perfection. This aromatic dish is a celebration of tender mutton pieces infused with a medley of traditional spices. The marinade, comprising a blend of aromatic ingredients, enhances the meat's succulence while imparting a captivating aroma. The mutton is then pan-fried until golden, resulting in irresistible caramelization. A touch of homemade spice paste adds depth and complexity to the dish. Finally, the meat is pressure-cooked until tender, achieving a melt-in-your-mouth texture. To elevate the flavors, a finishing touch of ghee and Garam Masala powder entices your palate with a burst of warmth and indulgence. Get ready to embark on a culinary journey with this mouthwatering Bengali delicacy."
 
 ingredients:
-  - 1 kg Chicken Thighs
-  - 2 Onions, sliced into quarters
-  - 2 Tomatoes, sliced into quarters
-  - 1.5 Tbsp Grated Ginger
-  - 2 Red Chilies, with inside seeds removed
-  - 3 - 4 Tbsp Vegetable Oil
-  - 2 Tsp Sugar
+  - 5 tbsp Vegetable Oil
+  - 350 g Minced Mutton
+  - 200 g Rice (Gobindobhog or any other Fragrant Rice)
+  - 4 Sliced Onions
+  - 100 g Yellow Lentils
+  - 1 cup Green Peas
+  - 1 tbsp Cumin Seeds
+  - 15-16 Black Pepper Corns
+  - 3.5 tbsp Ghee
+  - 1.25 tbsp Sugar
+  - 1 tsp Garam Masala Powder
+  - 4-5 Green Chilies (Optional)
+  - 4 Green Cardamoms, seeds of 2 Black Cardamoms
+  - 4-5 Cloves
+  - 2 Crushed sticks of Cinnamon
+  - 2 Bay Leaves
   - Salt to taste
   
 prep_time: 1
 cook_time: 1
 ---
+### Initial Preparatory Process
 
-## Ingredients
+- Wash and soak 200 g of rice
+- Add 150 g yogurt, 1 1/2 tsp of Red Chili Powder, 1 tsp Salt, 4 tsp Ginger Juice
+- Mix well, incorporation everything
+- 2 teaspoons Biryani masala powder Refrigerate for 2+ hours; for best results, marinate overnight
+- Salt to taste
 
-## Cooking Process
 
 1. Place 1 kg of chicken into a skillet set to medium heat.
 2. Place all onions and tomatoes synonomously to the chicken.

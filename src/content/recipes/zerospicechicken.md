@@ -30,8 +30,6 @@ prep_time: 1
 cook_time: 1
 ---
 
-## Ingredients
-
 ## Cooking Process
 
 1. Place 1 kg of chicken into a skillet set to medium heat.

@@ -11,11 +11,11 @@ allergens:
   - Dairy
 
 image_urls:
-  - "https://i.redd.it/w3kr4m2fi3111.png"
-  - "https://i.redd.it/w3kr4m2fi3111.png"
-  - "https://i.redd.it/w3kr4m2fi3111.png"
+  - "https://files.catbox.moe/zecung.png"
+  - "https://files.catbox.moe/zecung.png"
+  - "https://files.catbox.moe/zecung.png"
 
-introduction: "smth smth"
+introduction: "Kalibarir Niramish Mangsho is a culinary delight that pays homage to Bengali non-vegetarian cuisine. This traditional dish skillfully captures the essence of Bengali flavors. Featuring a medley of aromatic spices and carefully selected plant-based ingredients, the dish offers a rich and hearty experience reminiscent of the classic meat-based Mangsho. Its tender textures and robust taste showcase the artistry of Bengali cooking, enticing both vegetarians and non-vegetarians alike to savor its unique blend of tastes and cultural heritage. Kalibarir Niramish Mangsho is a testament to the culinary innovation that celebrates tradition while embracing the diversity of dietary preferences."
 
 ingredients:
 - 500g Mutton
@@ -38,8 +38,6 @@ ingredients:
 prep_time: 1
 cook_time: 1
 ---
-
-## Ingredients
 
 ### To Marinate the Chicken
 - 500g Mutton
