@@ -7,10 +7,10 @@ const { title, description } = Astro.props;
 ---
 
 <div
-  class="dark:bg-dark-text/[0.03] bg-light-text/[0.03] rounded-lg flex-1 px-8 py-4 hover:-translate-y-6 hover:border-transparent hover:shadow-2xl shadow-primary transition-all duration-300 text-balance delay-75 group"
+  class="dark:bg-dark-text/[0.03] bg-light-text/[0.03] rounded-lg flex-1 px-7 pb-8 pt-6 hover:-translate-y-6 hover:border-transparent hover:shadow-2xl shadow-primary transition-all duration-300 text-balance delay-75 group"
 >
-  <h2 class="dark:text-dark-text text-light-text group-hover:underline">{title}</h2>
-  <p class="dark:text-dark-text text-light-text">
+  <h2 class="py-2 dark:text-dark-text text-light-text">{title}</h2>
+  <p class="leading-7 dark:text-dark-text text-light-text">
     {description}
   </p>
 </div>
