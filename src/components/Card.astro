@@ -1,14 +1,16 @@
 ---
 export interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
+  imageSrc?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, imageSrc } = Astro.props;
 ---
 
 <div
   class="dark:bg-dark-text/[0.03] bg-light-text/[0.03] rounded-lg flex-1 px-7 pb-8 pt-6 hover:-translate-y-6 hover:border-transparent hover:shadow-2xl shadow-primary transition-all duration-300 text-balance delay-75 group"
 >
+  {imageSrc && <img src={imageSrc} alt={title} class="w-full object-cover mb-4" />}
   <h2 class="py-2 dark:text-dark-text text-light-text">{title}</h2>
   <p class="leading-7 dark:text-dark-text text-light-text">
     {description}
