@@ -15,7 +15,7 @@ image_urls:
   - "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgjCoupIil3ugsNHNod3z1L9Wc4NerCN-8QQ5857eH6euY0BHBldb45-DoIxiz1WOz_g&usqp=CAU"
   - "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgjCoupIil3ugsNHNod3z1L9Wc4NerCN-8QQ5857eH6euY0BHBldb45-DoIxiz1WOz_g&usqp=CAU"
 
-introduction: "Introducing 'Mangsher Gorgora': a delightful Bengali recipe that showcases the rich flavors of marinated mutton cooked to perfection. This aromatic dish is a celebration of tender mutton pieces infused with a medley of traditional spices. The marinade, comprising a blend of aromatic ingredients, enhances the meat's succulence while imparting a captivating aroma. The mutton is then pan-fried until golden, resulting in irresistible caramelization. A touch of homemade spice paste adds depth and complexity to the dish. Finally, the meat is pressure-cooked until tender, achieving a melt-in-your-mouth texture. To elevate the flavors, a finishing touch of ghee and Garam Masala powder entices your palate with a burst of warmth and indulgence. Get ready to embark on a culinary journey with this mouthwatering Bengali delicacy."
+introduction: ""
 
 ingredients:
   - 1 kg Chicken Thighs

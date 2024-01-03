@@ -54,7 +54,7 @@ import RecipeCard from "../components/RecipeCard.astro";
         <RecipeCard
           title={recipe.data.title}
           description={
-            recipe.data.introduction.split(".").slice(0, 3).join(".") + "."
+            recipe.data.introduction
           }
           url={recipe.data.image_urls[0]}
           tags={recipe.data.tags}

@@ -17,7 +17,7 @@ image_urls:
   - "https://files.catbox.moe/tra152.png"
   - "https://files.catbox.moe/tra152.png"
 
-introduction: Each grain of basmati rice, kissed by saffron's golden hue, beckons the eager palate. Succulent pieces of tender chicken, marinated to perfection, nestle amidst the tapestry of flavors, their juices melding with the rice to create a symphony of taste. With each delicate bite, a burst of complexity ensues—cumin and coriander impart earthy undertones, while cloves and cardamom weave a subtle warmth. The heat of green chili and the tang of lemon elevate the dish, creating a harmonious balance that ignites the taste buds.
+introduction: ""
 
 ingredients:
   - 5 Chicken Drumsticks
