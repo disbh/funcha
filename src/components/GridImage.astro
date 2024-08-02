@@ -3,18 +3,21 @@ export interface Props {
   caption: string;
   url: string;
   columns: string;
+  rows: string;
+  pageUrl: string;
 }
-const { caption, url, columns } = Astro.props;
+const { caption, url, columns, rows, pageUrl } = Astro.props;
 ---
 
-<div
+<a
   class:list={[
-    "group bg-gray-200 w-full h-full  overflow-hidden relative row-span-1",
-    columns,
+    "group bg-gray-200 w-full h-full  overflow-hidden relative",
+    columns, rows,
   ]}
+  href={pageUrl}
 >
   <img
-    class="transform transition-transform duration-300 group-hover:scale-[1.15] w-full h-full bg-contain max-h-80"
+    class="transform transition-transform duration-300 group-hover:scale-[1.15] w-full h-full bg-stretch aspect-[16/9] object-cover object-center"
     loading="lazy"
     src={url}
     alt="image1"
@@ -29,8 +32,8 @@ const { caption, url, columns } = Astro.props;
     {caption}
   </div>
   <div
-    class="text-lg text-white absolute bottom-0 right-0 m-2 mx-8 transition-all opacity-0 translate-y-12 group-hover:translate-y-0 duration-500 group-hover:opacity-100"
+    class="text-lg text-white absolute bottom-0 right-0 m-2 transition-all opacity-0 translate-y-12 group-hover:translate-y-0 duration-500 group-hover:opacity-100"
   >
     Recipe &gt;&gt;
   </div>
-</div>
+</a>

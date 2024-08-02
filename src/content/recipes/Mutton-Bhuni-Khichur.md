@@ -36,8 +36,8 @@ ingredients:
   - 2 Bay Leaves
   - Salt to taste
   
-prep_time: 1
-cook_time: 1
+prep_time: 45
+cook_time: 45
 ---
 ### Initial Preparatory Process
 

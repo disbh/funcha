@@ -26,8 +26,8 @@ ingredients:
   - 3 - 4 Tbsp Vegetable Oil
   - 2 Tsp Sugar
   - Salt to taste
-prep_time: 1
-cook_time: 1
+prep_time: 60
+cook_time: 45
 ---
 
 ## Cooking Process

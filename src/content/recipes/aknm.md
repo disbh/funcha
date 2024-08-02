@@ -35,8 +35,8 @@ ingredients:
 - 1 Tsp Sugar
 - Salt to Taste
 
-prep_time: 1
-cook_time: 1
+prep_time: 60
+cook_time: 45
 ---
 
 ### To Marinate the Chicken

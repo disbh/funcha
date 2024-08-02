@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Murgh Shalmi, Chicken Curry
+title: Murgh Shalmi
 related:
   - Goat Biryani
   - Chicken Curry
