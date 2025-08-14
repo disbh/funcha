@@ -639,7 +639,7 @@
 </nav>
 <div class="spot -translate-y-[5.25rem]"></div>
 
-<script>
+<script data-astro-rerun>
   // element references
   const navbar = document.querySelector("nav");
   const spot = document.querySelector(".spot");
@@ -721,7 +721,7 @@
 
   let light = document.querySelector(".light");
   let night = document.querySelector(".night");
-  window.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       light.classList.remove("front");
       light.classList.add("back");

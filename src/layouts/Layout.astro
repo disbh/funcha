@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+import { ViewTransitions } from 'astro:transitions';
 import Preloader from "../components/Preloader.astro";
 ---
 
@@ -121,7 +122,7 @@ import Preloader from "../components/Preloader.astro";
         box-shadow: 0 0 0 rgba(37, 40, 45, 0);
       }
     </style>
-    <script>
+    <script data-astro-rerun>
       if (
         localStorage.theme === "dark" ||
         (!("theme" in localStorage) &&
@@ -132,9 +133,10 @@ import Preloader from "../components/Preloader.astro";
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <ViewTransitions />
   </head>
   <body class="overflow-x-hidden dark:bg-dark-bg bg-light-bg">
-    <Navbar />
+    <Navbar/>
     <slot />
     <Footer />
     <script src="../firestore.js"></script>
